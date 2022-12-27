@@ -7,6 +7,9 @@ function page() {
     <>
       <Navbar />
       <Hero />
+      <section className="w-screen h-screen" id="About"></section>
+      <section className="w-screen h-screen" id="Contact"></section>
+      <section className="w-screen h-screen"></section>
     </>
   );
 }

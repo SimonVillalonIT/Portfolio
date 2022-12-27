@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #d3dce6;
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #242D34;
+  border-radius: 14px;
+  border: 3px solid #242D34;
+}
+
+.dark::-webkit-scrollbar {
+  width: 7px;
+}
+
+.dark::-webkit-scrollbar-track {
+  background: #8492a6;
+  border-radius: 5px;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 14px;
+  border: 3px solid white;
+}

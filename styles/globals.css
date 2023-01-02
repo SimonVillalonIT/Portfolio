@@ -17,9 +17,9 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #242D34;
+  background: #242d34;
   border-radius: 14px;
-  border: 3px solid #242D34;
+  border: 3px solid #242d34;
 }
 
 .dark::-webkit-scrollbar {
@@ -36,3 +36,21 @@ html::-webkit-scrollbar-thumb {
   border-radius: 14px;
   border: 3px solid white;
 }
+
+.typing {
+  animation: typing 2s steps(18), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+

@@ -3,8 +3,8 @@ import Project from "../molecules/Project";
 
 function Projects() {
   return (
-    <section className="w-screen h-screen flex flex-col items-center ">
-      <h1 className="text-4xl font-bold mb-4">My Projects</h1>
+    <section className="w-screen flex flex-col items-center ">
+      <h1 className="text-4xl font-bold mb-4 dark:text-white">My Projects</h1>
       <p className="mb-12 text-blue text-xl">
         These are the projects I have developed
       </p>

@@ -1,10 +1,11 @@
 import React from "react";
-import Buttons from "../molecules/Buttons";
+import DownloadButton from "../atoms/DownloadButton";
 
-function Navbar() {
+function Navbar({children}) {
   return (
-    <header className="flex justify-end items-center w-screen">
-      <Buttons />
+    <header className="flex justify-between items-center w-screen">
+     <DownloadButton />
+     {children}
     </header>
   );
 }

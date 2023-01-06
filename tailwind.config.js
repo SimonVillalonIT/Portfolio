@@ -37,6 +37,7 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+        "5xl": "4rem",
       },
     },
     plugins: [],

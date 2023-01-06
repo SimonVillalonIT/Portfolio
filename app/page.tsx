@@ -6,6 +6,7 @@ import Projects from "../components/organisms/Projects";
 import Skills from "../components/organisms/Skills";
 import Footer from "../components/organisms/Footer";
 import Buttons from "../components/molecules/Buttons";
+import PreContact from "../components/molecules/PreContact";
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
       <About />
       <Skills />
       <Projects />
+      <PreContact />
       <Footer />
     </div>
   );

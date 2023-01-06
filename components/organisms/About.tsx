@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <section
-      className="w-screen h-screen bg-blue flex justify-center"
+      className="w-screen bg-blue flex justify-center pb-72"
       id="About"
     >
       <div className=" pt-44 flex flex-col items-center">

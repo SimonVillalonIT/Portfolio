@@ -14,7 +14,6 @@ const usePlane = (paperPlaneRef: React.MutableRefObject<any>) => {
         start: -100,
         end: 2800,
         scrub: 1,
-        markers: true,
         once: true,
       },
       motionPath: {

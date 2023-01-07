@@ -8,7 +8,7 @@ function Hero() {
     <section className="pt-20 relative w-screen h-screen flex justify-center">
       <FlyingPlane />
       <div className="text-center flex flex-col items-center">
-        <span className="typing block w-full max-w-[18ch] border-blue font-bold whitespace-nowrap border-r-4 text-5xl dark:text-white">
+        <span className="typing block w-full max-w-[20ch] border-blue font-bold whitespace-nowrap border-r-4 text-5xl dark:text-white">
           Full Stack Developer
         </span>
         <p className="text-xl font-thin text-blue pt-6">

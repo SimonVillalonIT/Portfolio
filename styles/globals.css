@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .typing {
-  animation: typing 2s steps(19), blink 0.5s infinite step-end alternate;
+  animation: typing 2s steps(20), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -168,7 +168,6 @@ html::-webkit-scrollbar-thumb {
   border-width: 1px;
   width: 600px;
   height: 200px;
-  /*border-radius*/
   border-radius: 100px;
   background: #fff;
   position: absolute;
@@ -194,33 +193,27 @@ html::-webkit-scrollbar-thumb {
 
 .cont button:focus {
   border: green;
-  /*animation*/
   -webkit-animation: extend 1s ease-in-out;
   -ms-animation: extend 1s ease-in-out;
   animation: extend 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
-  /* Chrome, Safari, Opera */
   animation-fill-mode: forwards;
 }
 
 .cont button:focus > span {
   border: green;
-  /*animation*/
   -webkit-animation: disappear 1s ease-in-out;
   -ms-animation: disappear 1s ease-in-out;
   animation: disappear 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
-  /* Chrome, Safari, Opera */
   animation-fill-mode: forwards;
 }
 
 .cont button:focus > img {
   border: green;
-  /*animation*/
   -webkit-animation: appear 1s ease-in-out;
   -ms-animation: appear 1s ease-in-out;
   animation: appear 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
-  /* Chrome, Safari, Opera */
   animation-fill-mode: forwards;
 }

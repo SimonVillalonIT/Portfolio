@@ -31,7 +31,7 @@ function Project({
           } absolute text-white bg-blue/90 w-full h-full rounded-xl flex flex-col items-center justify-evenly -bottom-96 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-300`}
         >
           <h3 className="font-bold underline text-xl">{title}</h3>
-          <p>{description}</p>
+          <p className="w-4/5">{description}</p>
           <div className="flex w-3/4 justify-evenly items-center">
             <Link href={link} target="_blank">
               <button className="border rounded-2xl duration-150 border-white p-2 hover:bg-white hover:text-blue">

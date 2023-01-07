@@ -1,6 +1,14 @@
 import { gsap } from "gsap";
 
-export default function SkillsAnimation(FrontendSkills, BackendSkills) {
+export interface SkillsInterface {
+  name: string;
+  src: string;
+}
+
+export default function SkillsAnimation(
+  FrontendSkills: SkillsInterface[],
+  BackendSkills: SkillsInterface[]
+) {
   let tl = gsap.timeline({
     delay: 0.3,
     scrollTrigger: { trigger: "#wrapper", start: "-200" },
@@ -11,7 +19,6 @@ export default function SkillsAnimation(FrontendSkills, BackendSkills) {
         tl.to(`#skill${i}`, {
           autoAlpha: 1,
           duration: 1,
-          absolute: true,
           scale: 1,
           ease: "power4.inOut",
         });
@@ -20,7 +27,6 @@ export default function SkillsAnimation(FrontendSkills, BackendSkills) {
         tl.to(`#skill${i}`, {
           autoAlpha: 1,
           duration: 1,
-          absolute: true,
           scale: 1,
           ease: "power4.inOut",
         });

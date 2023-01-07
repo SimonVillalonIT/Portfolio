@@ -1,7 +1,6 @@
-
 import React, { useRef, useEffect } from "react";
 import Path from "../atoms/Path";
-import usePlane from "../../hooks/usePlane";
+import usePlane from "../../utils/PlaneAnimation";
 
 function FlyingPlane() {
   const paperPlane = useRef(null);

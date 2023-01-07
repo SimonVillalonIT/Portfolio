@@ -1,11 +1,16 @@
-import Script from "next/script";
-
 export default function Head({ children }) {
   return (
     <>
-      <title></title>
+      <title>My Portfolio</title>
+      <link rel="icon" href="/Plane.png" type="image/icon type" />
+      <meta
+        name="description"
+        content="This is the Portfolio page of Simon Villalon built with NextJS"
+      ></meta>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <Script src="https://dev.anthonyfessy.com/lottie.min.js" />
+      <meta name="robots2" content="noindex, nofollow" />
+      <meta charSet="UTF-8" />
+      <meta http-equiv="refresh" content='5;url="https://example.com/"' />
     </>
   );
 }

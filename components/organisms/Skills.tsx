@@ -8,7 +8,6 @@ function Skills() {
   useEffect(() => {
     SkillsAnimation(FrontendSkills, BackendSkills);
   }, []);
-
   return (
     <section
       id="wrapper"

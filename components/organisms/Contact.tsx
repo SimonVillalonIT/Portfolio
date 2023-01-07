@@ -1,14 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import AvatarHover from "../molecules/AvatarHover";
 import ContactForm from "../molecules/ContactForm";
 
 function Contact() {
-  const [sent, setSent] = useState(false);
-
-  const messageStateToggle = () => {
-    setSent(true);
-  };
   return (
     <div className="flex flex-col w-3/5 items-center">
       <AvatarHover

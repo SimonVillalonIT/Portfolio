@@ -1,12 +1,12 @@
-import React, { useRef, useEffect } from "react";
-import Path from "../atoms/Path";
-import usePlane from "../../utils/PlaneAnimation";
+import React, { useRef, useEffect } from 'react'
+import Path from '../atoms/Path'
+import usePlane from '../../utils/PlaneAnimation'
 
 function FlyingPlane() {
-  const paperPlane = useRef(null);
+  const paperPlane = useRef(null)
   useEffect(() => {
-    usePlane(paperPlane);
-  }, []);
+    usePlane(paperPlane)
+  }, [])
   return (
     <div>
       <Path className="absolute -z-30 -left-12 -top-48 opacity-0" />
@@ -17,7 +17,7 @@ function FlyingPlane() {
         alt="Paper Plane"
       />
     </div>
-  );
+  )
 }
 
-export default FlyingPlane;
+export default FlyingPlane

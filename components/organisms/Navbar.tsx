@@ -1,13 +1,13 @@
-import React from "react";
-import DownloadButton from "../atoms/DownloadButton";
+import React from 'react'
+import DownloadButton from '../atoms/DownloadButton'
 
-function Navbar({children}) {
+function Navbar({ children }) {
   return (
     <header className="flex justify-between items-center w-screen">
-     <DownloadButton />
-     {children}
+      <DownloadButton />
+      {children}
     </header>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

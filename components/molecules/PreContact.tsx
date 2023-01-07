@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "../atoms/Button";
+import React from 'react'
+import Button from '../atoms/Button'
 
 function PreContact() {
   return (
@@ -12,7 +12,7 @@ function PreContact() {
       </p>
       <Button id="contactButton" link="/Contact" text="Lets work together!" />
     </div>
-  );
+  )
 }
 
-export default PreContact;
+export default PreContact

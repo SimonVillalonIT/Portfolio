@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { FaGithub } from 'react-icons/fa'
 
 function Project({
   image,
@@ -12,7 +12,7 @@ function Project({
   github,
   onLoad,
   className,
-  loaded,
+  loaded
 }) {
   return (
     <div className="relative w-144 h-fit group duration-500">
@@ -27,7 +27,7 @@ function Project({
         />
         <div
           className={`${
-            loaded ? "opacity-100" : "opacity-0"
+            loaded ? 'opacity-100' : 'opacity-0'
           } absolute text-white bg-blue/90 w-full h-full rounded-xl flex flex-col items-center justify-evenly -bottom-96 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-300`}
         >
           <h3 className="font-bold underline text-xl">{title}</h3>
@@ -45,7 +45,7 @@ function Project({
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Project;
+export default Project

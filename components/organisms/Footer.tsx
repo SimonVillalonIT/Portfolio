@@ -1,11 +1,11 @@
-import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import {
   BsFillFilePersonFill,
   BsMailbox,
-  BsTelephoneFill,
-} from "react-icons/bs";
-import Link from "next/link";
+  BsTelephoneFill
+} from 'react-icons/bs'
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -16,7 +16,7 @@ function Footer() {
             <div className="bg-white/60 w-fit p-6 rounded-tl-5xl h-fit flex flex-col items-center rounded-br-5xl">
               <div className="text-gray-dark font-bold">
                 <div className="flex items-center">
-                  <BsFillFilePersonFill />{" "}
+                  <BsFillFilePersonFill />{' '}
                   <p className="pl-2">Simón Enoch Villalón</p>
                 </div>
                 <div className="w-full flex items-center">
@@ -28,7 +28,7 @@ function Footer() {
                   <p className="pl-2">+54 3571 665914</p>
                 </div>
                 <div className="w-full flex items-center">
-                    <FaGithub />
+                  <FaGithub />
                   <p className="pl-2">
                     https://github.com/SimonVillalonIT/Portfolio
                   </p>
@@ -57,6 +57,7 @@ function Footer() {
             <div className="flex">
               <Link
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/simon-villalon-8268a8256/"
               >
                 <FaLinkedin className="mr-4 hover:scale-110 duration-300" />
@@ -64,7 +65,11 @@ function Footer() {
               <h1>Linkedin</h1>
             </div>
             <div className="flex">
-              <Link target="_blank" href="https://github.com/SimonVillalonIT">
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/SimonVillalonIT"
+              >
                 <FaGithub className="mr-4 hover:scale-110 duration-300" />
               </Link>
               <h1>Github</h1>
@@ -76,7 +81,7 @@ function Footer() {
         @Copyright {new Date().getFullYear()} All rights reserved
       </h1>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

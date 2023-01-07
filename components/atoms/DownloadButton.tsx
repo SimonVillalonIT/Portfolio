@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from 'next/link'
+import React from 'react'
 
 function DownloadButton() {
   return (
@@ -8,7 +8,7 @@ function DownloadButton() {
         Download CV
       </button>
     </Link>
-  );
+  )
 }
 
-export default DownloadButton;
+export default DownloadButton

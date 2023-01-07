@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import React from 'react';
+import React from 'react'
 
 function SuccessMessage() {
   return (
@@ -16,7 +15,7 @@ function SuccessMessage() {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default SuccessMessage;
+export default SuccessMessage

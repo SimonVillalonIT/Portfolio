@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function SkillContainer({ children, title }) {
   return (
@@ -6,7 +6,7 @@ function SkillContainer({ children, title }) {
       <h1 className="text-blue text-4xl font-bold">{title}</h1>
       {children}
     </div>
-  );
+  )
 }
 
-export default SkillContainer;
+export default SkillContainer

@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import AvatarHover from "../molecules/AvatarHover";
-import ContactForm from "../molecules/ContactForm";
+'use client'
+import React from 'react'
+import AvatarHover from '../molecules/AvatarHover'
+import ContactForm from '../molecules/ContactForm'
 
 function Contact() {
   return (
@@ -12,11 +12,11 @@ function Contact() {
         height={280}
       />
       <h2 className="text-center mt-32 text-2xl text-blue">
-        Use the form below to contact me. Let's work together!
+        Use the form below to contact me. Lets work together!
       </h2>
       <ContactForm />
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

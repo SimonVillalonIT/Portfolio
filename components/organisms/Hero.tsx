@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import AvatarHover from "../molecules/AvatarHover";
-import FlyingPlane from "../molecules/FlyingPlane";
+'use client'
+import React from 'react'
+import AvatarHover from '../molecules/AvatarHover'
+import FlyingPlane from '../molecules/FlyingPlane'
 
 function Hero() {
   return (
@@ -17,7 +17,7 @@ function Hero() {
         <AvatarHover className="" width={264} height={280} />
       </div>
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

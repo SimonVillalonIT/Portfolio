@@ -1,29 +1,29 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import SuccessMessage from "../atoms/SuccessMessage";
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import SuccessMessage from '../atoms/SuccessMessage'
 
 function ContactForm() {
-  const form = useRef();
+  const form = useRef()
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = e => {
+    e.preventDefault()
 
     emailjs
       .sendForm(
-        "service_zgj5haf",
-        "template_awcrawr",
+        'service_zgj5haf',
+        'template_awcrawr',
         form.current,
-        "S4cEkUuIYWHJmqsT6"
+        'S4cEkUuIYWHJmqsT6'
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        result => {
+          console.log(result.text)
         },
-        (error) => {
-          console.log(error.text);
+        error => {
+          console.log(error.text)
         }
-      );
-  };
+      )
+  }
 
   return (
     <form
@@ -61,7 +61,7 @@ function ContactForm() {
         <SuccessMessage />
       </div>
     </form>
-  );
+  )
 }
 
-export default ContactForm;
+export default ContactForm

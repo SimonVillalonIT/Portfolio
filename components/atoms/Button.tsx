@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Button(props) {
   return (
@@ -10,7 +10,7 @@ function Button(props) {
         {props.text}
       </button>
     </a>
-  );
+  )
 }
 
-export default Button;
+export default Button

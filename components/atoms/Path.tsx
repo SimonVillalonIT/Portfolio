@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Path({ className }) {
   return (
@@ -16,7 +16,7 @@ function Path({ className }) {
         stroke="black"
       />
     </svg>
-  );
+  )
 }
 
-export default Path;
+export default Path

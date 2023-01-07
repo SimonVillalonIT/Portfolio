@@ -1,7 +1,7 @@
-import React from "react";
-import MonitorSvg from "../atoms/MonitorSvg";
-import Carrousel from "../molecules/Carrousel";
-import { projects } from "../../utils/Projects";
+import React from 'react'
+import MonitorSvg from '../atoms/MonitorSvg'
+import Carrousel from '../molecules/Carrousel'
+import { projects } from '../../utils/Projects'
 
 function Projects() {
   return (
@@ -12,10 +12,10 @@ function Projects() {
       </p>
       <MonitorSvg className="" />
       <div className="bottom-0 -top-6 flex absolute justify-center flex-shrink-0">
-        <Carrousel className={""} data={projects} />
+        <Carrousel className={''} data={projects} />
       </div>
     </section>
-  );
+  )
 }
 
-export default Projects;
+export default Projects

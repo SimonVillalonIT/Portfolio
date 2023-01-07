@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
 function Skill({ src, name, id }) {
   return (
@@ -16,7 +16,7 @@ function Skill({ src, name, id }) {
       />
       <p className="dark:text-white text-center text-xl mt-1">{name}</p>
     </div>
-  );
+  )
 }
 
-export default Skill;
+export default Skill

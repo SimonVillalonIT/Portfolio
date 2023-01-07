@@ -1,11 +1,8 @@
-import React from "react";
+import React from 'react'
 
 function About() {
   return (
-    <section
-      className="w-screen bg-blue flex justify-center pb-72"
-      id="About"
-    >
+    <section className="w-screen bg-blue flex justify-center pb-72" id="About">
       <div className=" pt-44 flex flex-col items-center">
         <h2 className="text-center text-3xl font-bold text-white">
           Hi, I’m Simon. Nice to see you.
@@ -17,6 +14,6 @@ function About() {
         </p>
       </div>
     </section>
-  );
+  )
 }
-export default About;
+export default About

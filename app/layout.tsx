@@ -1,9 +1,9 @@
-import "../styles/globals.css";
+import '../styles/globals.css'
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html className="dark:">
@@ -15,5 +15,5 @@ export default function RootLayout({
       </head>
       <body className="bg-white dark:bg-gray-dark">{children}</body>
     </html>
-  );
+  )
 }

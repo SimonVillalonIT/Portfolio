@@ -1,13 +1,13 @@
-"use client";
-import React, { useEffect } from "react";
-import Skill from "../molecules/Skill";
-import SkillContainer from "../molecules/SkillContainer";
-import { FrontendSkills, BackendSkills } from "../../utils/Skills";
-import SkillsAnimation from "../../utils/SkillsAnimation";
+'use client'
+import React, { useEffect } from 'react'
+import Skill from '../molecules/Skill'
+import SkillContainer from '../molecules/SkillContainer'
+import { FrontendSkills, BackendSkills } from '../../utils/Skills'
+import SkillsAnimation from '../../utils/SkillsAnimation'
 function Skills() {
   useEffect(() => {
-    SkillsAnimation(FrontendSkills, BackendSkills);
-  }, []);
+    SkillsAnimation(FrontendSkills, BackendSkills)
+  }, [])
   return (
     <section
       id="wrapper"
@@ -25,7 +25,7 @@ function Skills() {
             {FrontendSkills.map((s, key) => {
               return (
                 <Skill id={`skill${key}`} key={key} name={s.name} src={s.src} />
-              );
+              )
             })}
           </div>
         </SkillContainer>
@@ -34,13 +34,13 @@ function Skills() {
             {BackendSkills.map((s, key) => {
               return (
                 <Skill id={`skill${key}`} key={key} name={s.name} src={s.src} />
-              );
+              )
             })}
           </div>
         </SkillContainer>
       </div>
     </section>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

@@ -1,4 +1,5 @@
-export default function Head({ children }) {
+import React from 'react'
+export default function Head() {
   return (
     <>
       <title>My Portfolio</title>
@@ -10,7 +11,6 @@ export default function Head({ children }) {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="robots2" content="noindex, nofollow" />
       <meta charSet="UTF-8" />
-      <meta http-equiv="refresh" content='5;url="https://example.com/"' />
     </>
-  );
+  )
 }

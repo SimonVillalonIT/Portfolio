@@ -1,29 +1,28 @@
-'use client';
-import React from 'react';
-import { useState, useEffect } from 'react';
+'use client'
+import React, { useState, useEffect } from 'react'
 
 function ButtonToggleMode() {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState(null)
 
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
+      setTheme('dark')
     } else {
-      setTheme('light');
+      setTheme('light')
     }
-  }, []);
+  }, [])
 
   useEffect(() => {
     if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove('dark')
     }
-  }, [theme]);
+  }, [theme])
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
   return (
     <div className="relative w-fit mr-16">
       <input type="checkbox" id="toggleB" className="sr-only" />
@@ -33,7 +32,7 @@ function ButtonToggleMode() {
         className="dot cursor-pointer absolute bg-white left-1 top-1 dark:bg-gray-dark dark:transform dark:translate-x-full w-6 h-6 rounded-full transition"
       ></div>
     </div>
-  );
+  )
 }
 
-export default ButtonToggleMode;
+export default ButtonToggleMode

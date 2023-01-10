@@ -11,8 +11,8 @@ function Footer() {
   return (
     <div>
       <footer className="border-t-2 border-blue bottom-0 text-white bg-blue w-screen py-12">
-        <div className="flex w-screen h-full justify-around">
-          <div className="w-1/3 flex justify-end">
+        <div className="flex flex-col w-screen h-full justify-around items-center sm:flex-row sm:items-start">
+          <div className="w-1/3 flex justify-center">
             <div className="bg-white/60 w-fit p-6 rounded-tl-5xl h-fit flex flex-col items-center rounded-br-5xl">
               <div className="text-gray-dark font-bold">
                 <div className="flex items-center">
@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className="w-full flex items-center">
                   <FaGithub />
-                  <p className="pl-2">
+                  <p className="pl-2 text-sm sm:text-auto">
                     https://github.com/SimonVillalonIT/Portfolio
                   </p>
                 </div>
@@ -39,22 +39,22 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/3 items-center">
-            <h1 className="font-bold text-2xl">Sections</h1>
+          <div className="flex flex-col w-1/3 items-center text-center">
+            <h1 className="font-bold text-xl sm:text-4xl py-2">Sections</h1>
             <div className="flex flex-col justify-around h-full">
               <Link href="/">
-                <p className="text-xl">Main</p>
+                <p className="text-xl sm:text-2xl py-1">Main</p>
               </Link>
               <Link href="#About">
-                <p className="text-xl">About</p>
+                <p className="text-xl sm:text-2xl sm:py-1">About</p>
               </Link>
               <Link href="/Contact">
-                <p className="text-xl">Contact</p>
+                <p className="text-xl sm:text-2xl sm:py-1">Contact</p>
               </Link>
             </div>
           </div>
-          <div className="flex text-4xl w-1/3 flex-col justify-around">
-            <div className="flex">
+          <div className="flex w-1/3 flex-col justify-around items-start">
+            <div className="flex sm:text-5xl items-center justify-center sm:py-6">
               <Link
                 target="_blank"
                 rel="noreferrer"
@@ -62,17 +62,17 @@ function Footer() {
               >
                 <FaLinkedin className="mr-4 hover:scale-110 duration-300" />
               </Link>
-              <h1>Linkedin</h1>
+              <h1 className="text-xl">Linkedin</h1>
             </div>
-            <div className="flex">
+            <div className="flex items-center sm:py-6">
               <Link
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/SimonVillalonIT"
               >
-                <FaGithub className="mr-4 hover:scale-110 duration-300" />
+                <FaGithub className="mr-4 hover:scale-110 duration-300 sm:text-5xl" />
               </Link>
-              <h1>Github</h1>
+              <h1 className="text-xl">Github</h1>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ function Carrousel({ data, className }) {
     <div className={className + 'flex items-center justify-between'}>
       <span
         onClick={previous}
-        className="text-5xl mx-2 pointer cursor-pointer text-white"
+        className="text-2xl sm:text-5xl mx-2 pointer cursor-pointer text-gray-dark sm:text-white"
       >
         <FaArrowCircleLeft />
       </span>
@@ -27,7 +27,10 @@ function Carrousel({ data, className }) {
         }}
         loaded={loaded}
       />
-      <span onClick={next} className="text-5xl mx-2 cursor-pointer text-white">
+      <span
+        onClick={next}
+        className="text-2xl sm:text-5xl mx-2 cursor-pointer text-gray-dark sm:text-white"
+      >
         <FaArrowCircleRight />
       </span>
     </div>

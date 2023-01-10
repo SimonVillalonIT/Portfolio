@@ -1,8 +1,9 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import useTheme from '../../hooks/useTheme'
 
-function ButtonToggleMode() {
-  const [theme, setTheme] = useState(null)
+function ButtonToggleMode({ className }) {
+  const { theme, setTheme, handleThemeSwitch } = useTheme()
 
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -15,16 +16,15 @@ function ButtonToggleMode() {
   useEffect(() => {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark')
+      setTheme('dark')
     } else {
       document.documentElement.classList.remove('dark')
+      setTheme('light')
     }
   }, [theme])
 
-  const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
   return (
-    <div className="relative w-fit mr-16">
+    <div className={`${className}`}>
       <input type="checkbox" id="toggleB" className="sr-only" />
       <div className="bg-gray dark:bg-gray-light w-14 h-8 rounded-full"></div>
       <div

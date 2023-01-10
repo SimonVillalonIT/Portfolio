@@ -3,9 +3,9 @@ import DownloadButton from '../atoms/DownloadButton'
 
 function Navbar({ children }) {
   return (
-    <header className="flex justify-between items-center w-screen">
+    <header className="w-screen flex justify-between items-center">
       <DownloadButton />
-      {children}
+      <div className="flex items-center">{children}</div>
     </header>
   )
 }

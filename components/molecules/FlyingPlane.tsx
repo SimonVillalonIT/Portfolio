@@ -8,7 +8,6 @@ function FlyingPlane({ heroRef }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setScreen(window.innerWidth)
-      console.log(screen)
     }
   }, [])
   useEffect(() => {

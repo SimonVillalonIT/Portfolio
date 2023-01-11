@@ -24,7 +24,7 @@ function ButtonToggleMode({ className }) {
   }, [theme])
 
   return (
-    <div className={`${className}`}>
+    <div className={`${className} xl:scale-150`}>
       <input type="checkbox" id="toggleB" className="sr-only" />
       <div className="bg-gray dark:bg-gray-light w-14 h-8 rounded-full"></div>
       <div

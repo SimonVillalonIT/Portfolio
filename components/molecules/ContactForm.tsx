@@ -27,33 +27,33 @@ function ContactForm() {
 
   return (
     <form
-      className="flex w-4/5 flex-wrap justify-between"
+      className="w-11/12 flex flex-wrap justify-between pb-144 sm:w-4/5"
       ref={form}
       onSubmit={sendEmail}
     >
-      <div className="pr-4 flex flex-col flex-wrap justify-center w-6/12">
-        <label className="text-gray">Name</label>
+      <div className="pr-4 flex flex-col flex-wrap justify-center w-full sm:w-6/12 xl:text-4xl xl:my-8">
+        <label className="text-gray xl:my-8">Name</label>
         <input
-          className="dark:bg-gray-dark dark:text-white/80 p-2 border-b-4 border text-black/60 border-gray border-b-blue rounded-xl focus:outline-4 focus:outline-blue"
+          className="dark:bg-gray-dark dark:text-white/80 p-2 border-b-4 border text-black/60 border-gray border-b-blue rounded-xl focus:outline-4 focus:outline-blue xl:p-8"
           type="text"
           name="user_name"
           required
         />
       </div>
-      <div className="pr-4 flex flex-col flex-wrap justify-center w-6/12 ">
-        <label className="text-gray">Email</label>
+      <div className="pr-4 flex flex-col flex-wrap justify-center w-full sm:w-6/12 xl:text-4xl xl:my-8">
+        <label className="text-gray xl:my-8">Email</label>
         <input
-          className="dark:bg-gray-dark dark:text-white/80 p-2 border-b-4 border text-black/60 border-gray border-b-blue rounded-xl focus:outline-4 focus:outline-blue"
+          className="dark:bg-gray-dark dark:text-white/80 p-2 border-b-4 border text-black/60 border-gray border-b-blue rounded-xl focus:outline-4 focus:outline-blue xl:p-8"
           type="email"
           name="user_email"
           required
         />
       </div>
       <div className="flex flex-col items-center w-full relative">
-        <div className="flex flex-col flex-wrap justify-center w-full">
-          <label className="text-gray">Message</label>
+        <div className="flex flex-col flex-wrap justify-center w-full xl:text-4xl xl:my-8">
+          <label className="text-gray xl:my-8">Message</label>
           <textarea
-            className="text-black/60 dark:text-white/80 dark:bg-gray-dark w-full h-48 border-b-4 border border-gray border-b-blue rounded-xl focus:outline-4 focus:outline-blue"
+            className="text-black/60 dark:text-white/80 dark:bg-gray-dark w-full h-48 border-b-4 border border-gray border-b-blue rounded-xl focus:outline-4 focus:outline-blue xl:p-8"
             name="message"
             required
           />

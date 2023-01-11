@@ -7,10 +7,10 @@ function About() {
       id="About"
     >
       <div className="pt-24 flex flex-col items-center sm:pt-44">
-        <h2 className="text-center text-2xl font-bold text-white">
+        <h2 className="text-center text-2xl font-bold text-white xl:text-6xl">
           Hi, I’m Simon. Nice to see you.
         </h2>
-        <p className="w-4/5 text-white text-lg text-center pt-6 leading-8 break-words sm:w-3/5">
+        <p className="w-4/5 text-white text-lg text-center font-thin pt-6 leading-8 break-words sm:w-3/5 xl:text-4xl xl:w-1/2 xl:leading-[3rem]">
           I am a young junior developer really eager to show what I am capable
           of. I love being able to create solutions for the different needs that
           arise putting all my skills and knowledge to the test.

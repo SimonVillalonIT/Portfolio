@@ -14,7 +14,7 @@ const paths = {
     { x: -10, y: 1600 },
     { x: 450, y: 2600 }
   ],
-  xl: [
+  md: [
     { x: 20, y: 20 },
     { x: 1000, y: 40 },
     { x: 1000, y: -20 },
@@ -26,6 +26,15 @@ const paths = {
     { x: 800, y: 1800 },
     { x: 200, y: 2300 },
     { x: 640, y: 2950 }
+  ],
+  xl: [
+    { x: 20, y: 20 },
+    { x: 2000, y: 80 },
+    { x: 2000, y: -80 },
+    { x: 800, y: -40 },
+    { x: 200, y: 1000 },
+    { x: 1000, y: 1000 },
+    { x: 1800, y: 1000 }
   ]
 }
 
@@ -40,15 +49,14 @@ const usePlane = (
     gsap.to(paperPlaneRef.current, {
       ease: '',
       scrollTrigger: {
-        markers: true,
         trigger: hero.current,
         start: 'top',
-        end: screen <= 450 ? 2600 : 3000,
+        end: screen <= 450 ? 2600 : 2700,
         scrub: 1,
         once: true
       },
       motionPath: {
-        path: screen <= 450 ? paths.sm : paths.xl,
+        path: screen <= 450 ? paths.sm : screen <= 1366 ? paths.md : paths.xl,
         autoRotate: true,
         alignOrigin: [0.5, 0.5]
       }
@@ -60,8 +68,8 @@ const usePlane = (
       opacity: 0,
       scrollTrigger: {
         trigger: paperPlaneRef.current,
-        start: 2580,
-        end: screen <= 450 ? 2800 : 2900,
+        start: screen <= 450 ? 2580 : 2300,
+        end: screen <= 450 ? 2800 : 2400,
         once: true,
         scrub: 1
       }
@@ -74,8 +82,8 @@ const usePlane = (
       scrollTrigger: {
         trigger: paperPlaneRef.current,
         markers: true,
-        start: 2650,
-        end: screen <= 450 ? 2800 : 2750,
+        start: screen <= 450 ? 2650 : 2500,
+        end: screen <= 450 ? 2800 : 2600,
         once: true,
         scrub: 1
       }

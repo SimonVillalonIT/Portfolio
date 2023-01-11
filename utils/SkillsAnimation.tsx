@@ -9,7 +9,7 @@ export default function SkillsAnimation(
   FrontendSkills: SkillsInterface[],
   BackendSkills: SkillsInterface[]
 ) {
-  let tl = gsap.timeline({
+  const tl = gsap.timeline({
     delay: 0.3,
     scrollTrigger: { trigger: '#wrapper', start: '-200' }
   })

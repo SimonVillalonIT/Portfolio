@@ -18,7 +18,7 @@ function page() {
     setShowMenu(!showMenu)
   }
   return (
-    <div className="flex flex-col items-center w-screen">
+    <div className="flex flex-col items-center w-screen relative">
       <Navbar>
         <Buttons />
         <ButtonToggleMode className="hidden relative w-fit mr-4 sm:mr-16 sm:flex" />

@@ -8,7 +8,9 @@ function Carrousel({ data, className }) {
   const { previous, next, selectedData, loaded, setLoaded } = useCarrousel(data)
 
   return (
-    <div className={className + 'flex items-center justify-between'}>
+    <div
+      className={className + 'flex items-center justify-between xl:scale-150'}
+    >
       <span
         onClick={previous}
         className="text-2xl sm:text-5xl mx-2 pointer cursor-pointer text-gray-dark sm:text-white"

@@ -9,11 +9,11 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div>
-      <footer className="border-t-2 border-blue bottom-0 text-white bg-blue w-screen py-12">
+    <div className="absolute left-0 bottom-0 ">
+      <footer className="border-t-2 border-blue text-white bg-blue w-screen py-12">
         <div className="flex flex-col w-screen h-full justify-around items-center sm:flex-row sm:items-start">
           <div className="w-1/3 flex justify-center">
-            <div className="bg-white/60 w-fit p-6 rounded-tl-5xl h-fit flex flex-col items-center rounded-br-5xl">
+            <div className="bg-white/60 w-fit p-6 rounded-tl-5xl h-fit flex flex-col items-center rounded-br-5xl xl:scale-125">
               <div className="text-gray-dark font-bold">
                 <div className="flex items-center">
                   <BsFillFilePersonFill />{' '}
@@ -39,7 +39,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/3 items-center text-center">
+          <div className="flex flex-col w-1/3 items-center text-center xl:scale-125">
             <h1 className="font-bold text-xl sm:text-4xl py-2">Sections</h1>
             <div className="flex flex-col justify-around h-full">
               <Link href="/">
@@ -53,7 +53,7 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex w-1/3 flex-col justify-around items-start">
+          <div className="flex w-1/3 flex-col justify-around items-start xl:scale-125">
             <div className="flex sm:text-5xl items-center justify-center sm:py-6">
               <Link
                 target="_blank"

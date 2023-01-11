@@ -3,7 +3,7 @@ import React from 'react'
 function SuccessMessage() {
   return (
     <div className="relative mt-28">
-      <div className="cont scale-[0.3] xl:scale-75">
+      <div className="cont scale-[0.3] xl:scale-50 2xl:scale-75">
         <button className="btn dark:bg-gray-dark">
           <span>Send</span>
           <img

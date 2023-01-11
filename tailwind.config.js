@@ -11,10 +11,11 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '976px',
-      xl: '1440px'
+      xl: '1440px',
+      '2xl': '1920px'
     },
     colors: {
-      blue: '#3084F2',
+      blue: '#0081FE',
       purple: '#323859',
       pink: '#ff49db',
       orange: '#F2A766',

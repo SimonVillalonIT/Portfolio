@@ -9,7 +9,10 @@ function Carrousel({ data, className }) {
 
   return (
     <div
-      className={className + 'flex items-center justify-between xl:scale-150'}
+      className={
+        className +
+        'flex items-center justify-between xl:scale-125 2xl:scale-150'
+      }
     >
       <span
         onClick={previous}

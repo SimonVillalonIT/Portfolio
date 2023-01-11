@@ -29,12 +29,31 @@ const paths = {
   ],
   xl: [
     { x: 20, y: 20 },
-    { x: 2000, y: 80 },
-    { x: 2000, y: -80 },
-    { x: 800, y: -40 },
-    { x: 200, y: 1000 },
+    { x: 1000, y: 80 },
+    { x: 1000, y: -60 },
+    { x: 300, y: -60 },
+    { x: 300, y: 1000 },
     { x: 1000, y: 1000 },
-    { x: 1800, y: 1000 }
+    { x: 1800, y: 1000 },
+    { x: 1000, y: 2000 },
+    { x: 300, y: 2000 },
+    { x: 300, y: 2500 },
+    { x: 200, y: 3300 },
+    { x: 500, y: 3500 }
+  ],
+  xxl: [
+    { x: 20, y: 20 },
+    { x: 1600, y: 80 },
+    { x: 1600, y: -60 },
+    { x: 600, y: -60 },
+    { x: 600, y: 1000 },
+    { x: 1600, y: 1000 },
+    { x: 1900, y: 1000 },
+    { x: 1600, y: 2000 },
+    { x: 600, y: 2000 },
+    { x: 600, y: 2500 },
+    { x: 400, y: 3300 },
+    { x: 1000, y: 3900 }
   ]
 }
 
@@ -49,14 +68,29 @@ const usePlane = (
     gsap.to(paperPlaneRef.current, {
       ease: '',
       scrollTrigger: {
+        markers: true,
         trigger: hero.current,
         start: 'top',
-        end: screen <= 450 ? 2600 : 2700,
+        end:
+          screen <= 450
+            ? 4000
+            : screen <= 1366
+            ? 3000
+            : screen <= 1919
+            ? 3400
+            : 3800,
         scrub: 1,
         once: true
       },
       motionPath: {
-        path: screen <= 450 ? paths.sm : screen <= 1366 ? paths.md : paths.xl,
+        path:
+          screen <= 450
+            ? paths.sm
+            : screen <= 1366
+            ? paths.md
+            : screen <= 1919
+            ? paths.xl
+            : paths.xxl,
         autoRotate: true,
         alignOrigin: [0.5, 0.5]
       }
@@ -67,9 +101,10 @@ const usePlane = (
       scale: 0.1,
       opacity: 0,
       scrollTrigger: {
+        markers: true,
         trigger: paperPlaneRef.current,
-        start: screen <= 450 ? 2580 : 2300,
-        end: screen <= 450 ? 2800 : 2400,
+        start: screen <= 450 ? 3450 : screen <= 1366 ? 2500 : 3200,
+        end: screen <= 450 ? 3500 : screen <= 1366 ? 2550 : 3300,
         once: true,
         scrub: 1
       }
@@ -80,10 +115,10 @@ const usePlane = (
       backgroundColor: '#3084F2',
       color: '#fff',
       scrollTrigger: {
-        trigger: paperPlaneRef.current,
         markers: true,
-        start: screen <= 450 ? 2650 : 2500,
-        end: screen <= 450 ? 2800 : 2600,
+        trigger: paperPlaneRef.current,
+        start: screen <= 450 ? 6000 : screen <= 1366 ? 2480 : 3200,
+        end: screen <= 450 ? 6150 : screen <= 1366 ? 2580 : 3300,
         once: true,
         scrub: 1
       }

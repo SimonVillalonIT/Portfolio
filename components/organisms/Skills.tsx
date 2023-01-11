@@ -13,7 +13,7 @@ function Skills() {
       id="wrapper"
       className="relative w-11/12 pb-2 bg-white shadow-2xl dark:bg-[#313E47] -top-32 rounded-2xl"
     >
-      <h1 className="text-center p-0 text-3xl text-blue shadow-blue drop-shadow-2xl sm:text-5xl font-bold mt-4 mb-8 xl:text-7xl">
+      <h1 className="text-center p-0 text-3xl text-blue shadow-blue drop-shadow-2xl sm:text-5xl font-bold mt-4 mb-8 xl:text-5xl 2xl:text-7xl">
         Technologies that I use
       </h1>
       <div className="block sm:flex">

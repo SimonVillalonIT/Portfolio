@@ -7,7 +7,7 @@ function AvatarHover({ height, width, className }) {
   const { avatarState, handleMouseOver, handleMouseLeave } = useAvatar()
   return (
     <div
-      className={`${className} hover:scale-110 duration-150 xl:scale-150 xl:hover:scale-[1.7]`}
+      className={`${className} hover:scale-110 duration-150 xl:scale-125 xl:hover:scale-[1.4] 2xl:scale-150 2xl:hover:scale-[1.7]`}
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >

@@ -1,30 +1,27 @@
 import React from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
+import { ImCross } from 'react-icons/im'
+import Button from '../atoms/Button'
 import ButtonToggleMode from '../atoms/ButtonToggleMode'
 
 function PhoneNavbar({ onClick }) {
   return (
-    <div className="phoneNavbar absolute flex-col items-center pt-24 px-6 h-screen w-screen top-0 -right-40 bg-blue z-[99]">
-      <div className="absolute flex left-4 top-4 text-3xl w-1/2 justify-between">
-        <AiOutlineMenu onClick={onClick} />
-        <ButtonToggleMode className="relative" />
+    <div className="phoneNavbar relative -top-96 flex items-center justify-center w-screen z-[99]">
+      <div className="absolute flex right-2 top-1 text-1xl justify-between dark:text-white">
+        <ImCross onClick={onClick} />
       </div>
-      <div className="text-4xl text-white">
-        <a onClick={onClick} href="/">
-          <p className="py-2 border-t-2 border-b w-1/2 border-y-white border-x-white text-center">
-            Main
-          </p>
-        </a>
-        <a onClick={onClick} href="#About">
-          <p className="py-2 border-t border-b w-1/2 border-y-white border-x-white text-center">
-            About
-          </p>
-        </a>
-        <a onClick={onClick} href="/Contact">
-          <p className="py-2 border-t border-b-2  w-1/2 border-y-white border-x-white text-center">
-            Contact
-          </p>
-        </a>
+      <div className="w-screen flex flex-col items-center pt-12">
+        <div className="flex items-center justify-center text-2xl w-8">
+          <p className="mr-2 dark:text-white">Dark</p>
+          <ButtonToggleMode className="relative" />
+        </div>
+        <Button
+          onClick={onClick}
+          className="my-4"
+          text="About"
+          link="#About"
+          many={false}
+        />
+        <Button onClick={onClick} text="Contact" link="/Contact" many={false} />
       </div>
     </div>
   )

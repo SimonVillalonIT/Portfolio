@@ -23,11 +23,11 @@ function page() {
         <Buttons />
         <ButtonToggleMode className="hidden relative w-fit mr-4 sm:mr-16 sm:flex" />
         <AiOutlineMenu
-          className="flex mr-2 text-3xl sm:hidden"
+          className="flex mr-2 text-3xl dark:text-white sm:hidden"
           onClick={handleOnClick}
         />
-        {showMenu ? <PhoneNavbar onClick={handleOnClick} /> : null}
       </Navbar>
+      {showMenu ? <PhoneNavbar onClick={handleOnClick} /> : null}
       <Hero />
       <About />
       <Skills />

@@ -217,3 +217,16 @@ html::-webkit-scrollbar-thumb {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+
+.phoneNavbar {
+  animation: Navbar 0.1s forwards;
+}
+
+@keyframes Navbar {
+  0% {
+    transform: translateY(192px);
+  }
+  100% {
+    transform: translateY(384px);
+  }
+}

@@ -5,7 +5,7 @@ import ContactForm from '../molecules/ContactForm'
 
 function Contact() {
   return (
-    <div className="flex flex-col w-4/5 items-center sm:3/5">
+    <div className="flex flex-col pb-128 w-4/5 items-center sm:pb-0 sm:3/5">
       <AvatarHover
         className="absolute top-0 scale-50 hover:scale-50 xl:top-16"
         width={264}

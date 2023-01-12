@@ -1,17 +1,11 @@
 'use client'
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import planeAnimation from '../../utils/PlaneAnimation'
 
 function FlyingPlane({ heroRef }) {
   const paperPlane = useRef(null)
-  const [screen, setScreen] = useState(0)
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setScreen(window.innerWidth)
-    }
-  }, [])
-  useEffect(() => {
-    planeAnimation(paperPlane, heroRef.current, screen)
+    planeAnimation(paperPlane, heroRef.current)
   }, [])
   return (
     <img

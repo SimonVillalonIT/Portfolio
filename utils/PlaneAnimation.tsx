@@ -30,7 +30,7 @@ const usePlane = (
       scrollTrigger: {
         trigger: hero.current,
         start: 'top',
-        end: 3800,
+        end: 3000,
         scrub: 1,
         once: true
       },
@@ -47,8 +47,8 @@ const usePlane = (
       opacity: 0,
       scrollTrigger: {
         trigger: paperPlaneRef.current,
-        start: 3200,
-        end: 3300,
+        start: 2900,
+        end: 3000,
         once: true,
         scrub: 1
       }
@@ -60,8 +60,8 @@ const usePlane = (
       color: '#fff',
       scrollTrigger: {
         trigger: paperPlaneRef.current,
-        start: 3200,
-        end: 3300,
+        start: 2900,
+        end: 3000,
         once: true,
         scrub: 1
       }

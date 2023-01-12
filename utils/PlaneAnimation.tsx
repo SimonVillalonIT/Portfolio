@@ -28,7 +28,6 @@ const usePlane = (
     gsap.to(paperPlaneRef.current, {
       ease: '',
       scrollTrigger: {
-        markers: true,
         trigger: hero.current,
         start: 'top',
         end: 3800,
@@ -47,7 +46,6 @@ const usePlane = (
       scale: 0.1,
       opacity: 0,
       scrollTrigger: {
-        markers: true,
         trigger: paperPlaneRef.current,
         start: 3200,
         end: 3300,
@@ -61,7 +59,6 @@ const usePlane = (
       backgroundColor: '#3084F2',
       color: '#fff',
       scrollTrigger: {
-        markers: true,
         trigger: paperPlaneRef.current,
         start: 3200,
         end: 3300,

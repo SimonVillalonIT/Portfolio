@@ -4,7 +4,7 @@ import planeAnimation from '../../utils/PlaneAnimation'
 
 function FlyingPlane({ heroRef }) {
   const paperPlane = useRef(null)
-  const [screen, setScreen] = useState(window.innerWidth)
+  const [screen, setScreen] = useState(0)
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setScreen(window.innerWidth)

@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import React from 'react'
 
 export default function RootLayout({
   children
@@ -13,7 +14,7 @@ export default function RootLayout({
           href="https://use.typekit.net/sde6xji.css"
         ></link>
       </head>
-      <body className="bg-white dark:bg-gray-dark">{children}</body>
+      <body className="bg-white dark:bg-gray-dark w-screen">{children}</body>
     </html>
   )
 }

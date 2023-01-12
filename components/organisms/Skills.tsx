@@ -11,12 +11,12 @@ function Skills() {
   return (
     <section
       id="wrapper"
-      className="relative w-10/12 pb-2 bg-white shadow-2xl dark:bg-[#313E47] -top-32 rounded-2xl"
+      className="relative w-11/12 pb-2 bg-white shadow-2xl dark:bg-[#313E47] -top-32 rounded-2xl"
     >
-      <h1 className="text-center p-0 underline text-blue text-4xl font-bold mt-4 mb-8">
+      <h1 className="text-center p-0 text-3xl text-blue shadow-blue drop-shadow-2xl sm:text-5xl font-bold mt-4 mb-8 xl:text-5xl 2xl:text-7xl">
         Technologies that I use
       </h1>
-      <div className="flex">
+      <div className="block sm:flex">
         <SkillContainer title="Frontend">
           <p className="pb-4 dark:text-white">
             (This is the part I enjoy the most)

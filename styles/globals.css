@@ -171,12 +171,12 @@ html::-webkit-scrollbar-thumb {
   border-radius: 100px;
   background: #fff;
   position: absolute;
-  border: 5px solid #3084F2;
+  border: 5px solid #3084f2;
 }
 
 .cont button > span {
   font-size: 48px;
-  color: #3084F2;
+  color: #3084f2;
 }
 
 .cont img {
@@ -186,7 +186,7 @@ html::-webkit-scrollbar-thumb {
   right: 0;
   bottom: 0;
   margin: auto;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
   filter: alpha(opacity=0);
   opacity: 0;
 }
@@ -216,4 +216,17 @@ html::-webkit-scrollbar-thumb {
   animation: appear 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.phoneNavbar {
+  animation: Navbar 0.1s forwards;
+}
+
+@keyframes Navbar {
+  0% {
+    transform: translateY(192px);
+  }
+  100% {
+    transform: translateY(384px);
+  }
 }

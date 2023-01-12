@@ -1,86 +1,64 @@
 import React from 'react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import {
-  BsFillFilePersonFill,
-  BsMailbox,
-  BsTelephoneFill
-} from 'react-icons/bs'
+import { BsMailbox, BsTelephoneFill } from 'react-icons/bs'
 import Link from 'next/link'
+import AvatarHover from '../molecules/AvatarHover'
 
 function Footer() {
   return (
-    <div>
-      <footer className="border-t-2 border-blue bottom-0 text-white bg-blue w-screen py-12">
-        <div className="flex w-screen h-full justify-around">
-          <div className="w-1/3 flex justify-end">
-            <div className="bg-white/60 w-fit p-6 rounded-tl-5xl h-fit flex flex-col items-center rounded-br-5xl">
-              <div className="text-gray-dark font-bold">
-                <div className="flex items-center">
-                  <BsFillFilePersonFill />{' '}
-                  <p className="pl-2">Simón Enoch Villalón</p>
-                </div>
-                <div className="w-full flex items-center">
-                  <BsMailbox />
-                  <p className="pl-2">simonvillalon10@gmail.com</p>
-                </div>
-                <div className="flex items-center">
-                  <BsTelephoneFill />
-                  <p className="pl-2">+54 3571 665914</p>
-                </div>
-                <div className="w-full flex items-center">
-                  <FaGithub />
-                  <p className="pl-2">
-                    https://github.com/SimonVillalonIT/Portfolio
-                  </p>
-                </div>
-              </div>
-              <div className="mt-8">
-                <p className="text-blue">Rio Tercero, Córdoba, Argentina</p>
-              </div>
+    <footer className="absolute left-0 bottom-0 bg-blue w-screen flex flex-col sm:flex-row sm:justify-center text-[#ffffffbd]">
+      <div className="flex flex-col w-full sm:w-10/12">
+        <div className="flex flex-col items-center sm:flex-row w-full sm:justify-between">
+          <div className="">
+            <AvatarHover
+              width={264}
+              height={280}
+              className="pt-12 w-fit scale-75 hover:scale-90 sm:pt-0 xl:mt-24 2xl:mt-36"
+            />
+          </div>
+          <div className="flex flex-col pt-16">
+            <h3 className="mb-8 text-base">SITEMAP</h3>
+            <Link href="/">
+              <p className="mb-4 text-sm">Home</p>
+            </Link>
+            <Link href="/#About">
+              <p className="mb-4 text-sm">About</p>
+            </Link>
+            <Link href="/Contact">
+              <p className="mb-4 text-sm">Contact</p>
+            </Link>
+          </div>
+          <div className="flex flex-col pt-16">
+            <h3 className="mb-8 text-base">SOCIALS</h3>
+            <div className="flex items-center mb-4 text-sm">
+              <FaGithub />
+              <p className="ml-1">Github</p>
+            </div>
+            <div className="flex items-center mb-4 text-sm">
+              <FaLinkedin />
+              <p className="ml-1">Linkedin</p>
             </div>
           </div>
-          <div className="flex flex-col w-1/3 items-center">
-            <h1 className="font-bold text-2xl">Sections</h1>
-            <div className="flex flex-col justify-around h-full">
-              <Link href="/">
-                <p className="text-xl">Main</p>
-              </Link>
-              <Link href="#About">
-                <p className="text-xl">About</p>
-              </Link>
-              <Link href="/Contact">
-                <p className="text-xl">Contact</p>
-              </Link>
-            </div>
-          </div>
-          <div className="flex text-4xl w-1/3 flex-col justify-around">
-            <div className="flex">
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/simon-villalon-8268a8256/"
-              >
-                <FaLinkedin className="mr-4 hover:scale-110 duration-300" />
-              </Link>
-              <h1>Linkedin</h1>
-            </div>
-            <div className="flex">
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/SimonVillalonIT"
-              >
-                <FaGithub className="mr-4 hover:scale-110 duration-300" />
-              </Link>
-              <h1>Github</h1>
+          <div className="flex flex-col pt-16">
+            <h3 className="mb-8 text-base">LOCATION</h3>
+            <div>
+              <p>🇦🇷 Argentina</p>
             </div>
           </div>
         </div>
-      </footer>
-      <h1 className="font-bold text-xl text-center bg-gray-dark text-white py-2">
-        @Copyright {new Date().getFullYear()} All rights reserved
-      </h1>
-    </div>
+        <div className="flex flex-col items-center sm:justify-between py-10 pb-24 font-bold">
+          <div className="flex items-center">
+            <BsMailbox />
+            <p className="ml-2">simonvillalon9@gmail.com</p>
+          </div>
+          <div className="flex items-center">
+            <BsTelephoneFill />
+            <p className="ml-2">+54 3571-665914</p>
+          </div>
+          <p>&#169; {new Date().getFullYear()} All rights reserved</p>
+        </div>
+      </div>
+    </footer>
   )
 }
 

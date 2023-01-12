@@ -15,10 +15,10 @@ function Project({
   loaded
 }) {
   return (
-    <div className="relative w-144 h-fit group duration-500">
+    <div className="relative h-56 sm:w-144 sm:h-80 group duration-500">
       <div className="overflow-hidden relative">
         <Image
-          className={`${className} duration-1000 rounded-xl h-80 w-144 group-hover:blur-sm object-cover`}
+          className={`${className} duration-1000 rounded-xl h-56 sm:h-80 sm:w-144 group-hover:blur-sm object-cover`}
           src={image}
           alt="title"
           width={1920}

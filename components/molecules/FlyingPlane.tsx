@@ -1,22 +1,25 @@
-import React, { useRef, useEffect } from 'react'
-import Path from '../atoms/Path'
-import usePlane from '../../utils/PlaneAnimation'
+'use client'
+import React, { useRef, useEffect, useState } from 'react'
+import planeAnimation from '../../utils/PlaneAnimation'
 
-function FlyingPlane() {
+function FlyingPlane({ heroRef }) {
   const paperPlane = useRef(null)
+  const [screen, setScreen] = useState(0)
   useEffect(() => {
-    usePlane(paperPlane)
+    if (typeof window !== 'undefined') {
+      setScreen(window.innerWidth)
+    }
+  }, [])
+  useEffect(() => {
+    planeAnimation(paperPlane, heroRef.current, screen)
   }, [])
   return (
-    <div>
-      <Path className="absolute -z-30 -left-12 -top-48 opacity-0" />
-      <img
-        ref={paperPlane}
-        className="paperplane absolute top-5 -left-32 w-24 z-50"
-        src="/Plane.png"
-        alt="Paper Plane"
-      />
-    </div>
+    <img
+      ref={paperPlane}
+      className="paperplane absolute -left-14 w-24 z-[99]"
+      src="/Plane.png"
+      alt="Paper Plane"
+    />
   )
 }
 

@@ -1,11 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 
-function Skill({ src, name, id }) {
+function Skill({ src, name, id, width }) {
   return (
     <div
       id={id}
-      className="scale-0 mt-4 dark:bg-gray-dark/5 bg-gray/10 shadow-xl rounded-2xl backdrop-blur-xl p-2 xl:mt-16"
+      className={`${
+        width > 500 ? 'scale-0' : 'scale-100'
+      } mt-4 dark:bg-gray-dark/5 bg-gray/10 shadow-xl rounded-2xl backdrop-blur-xl p-2 xl:mt-16`}
     >
       <Image
         className="w-32 h-32 object-cover rounded-2xl md:w-40 md:h-40 2xl:w-64 2xl:h-64"

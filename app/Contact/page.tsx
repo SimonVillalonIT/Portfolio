@@ -22,9 +22,9 @@ function page() {
           className="flex mr-2 text-3xl sm:hidden"
           onClick={handleOnClick}
         />
-        {showMenu ? <PhoneNavbar onClick={handleOnClick} /> : null}
       </Navbar>
-      <Contact />
+      {showMenu ? <PhoneNavbar onClick={handleOnClick} /> : null}
+      <Contact navbar={showMenu} />
       <Footer />
     </div>
   )

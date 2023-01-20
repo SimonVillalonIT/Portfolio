@@ -27,7 +27,7 @@ function ContactForm() {
 
   return (
     <form
-      className="w-11/12 flex flex-wrap justify-between pb-144 lg:w-4/5"
+      className="w-11/12 flex flex-wrap justify-between pb-144 sm:pb-[40rem] lg:w-4/5"
       ref={form}
       onSubmit={sendEmail}
     >

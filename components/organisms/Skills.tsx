@@ -1,12 +1,16 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Skill from '../molecules/Skill'
 import SkillContainer from '../molecules/SkillContainer'
 import { FrontendSkills, BackendSkills } from '../../utils/Skills'
 import SkillsAnimation from '../../utils/SkillsAnimation'
 function Skills() {
+  const [width, setWidth] = useState(0)
   useEffect(() => {
-    SkillsAnimation(FrontendSkills, BackendSkills)
+    setWidth(window.innerWidth)
+    if (width < 500) {
+      SkillsAnimation(FrontendSkills, BackendSkills)
+    }
   }, [])
   return (
     <section
@@ -24,7 +28,13 @@ function Skills() {
           <div className="flex flex-wrap justify-around w-8/12">
             {FrontendSkills.map((s, key) => {
               return (
-                <Skill id={`skill${key}`} key={key} name={s.name} src={s.src} />
+                <Skill
+                  width={width}
+                  id={`skill${key}`}
+                  key={key}
+                  name={s.name}
+                  src={s.src}
+                />
               )
             })}
           </div>
@@ -33,7 +43,13 @@ function Skills() {
           <div className="pt-10 flex flex-wrap justify-around w-8/12">
             {BackendSkills.map((s, key) => {
               return (
-                <Skill id={`skill${key}`} key={key} name={s.name} src={s.src} />
+                <Skill
+                  width={width}
+                  id={`skill${key}`}
+                  key={key}
+                  name={s.name}
+                  src={s.src}
+                />
               )
             })}
           </div>
